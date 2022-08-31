@@ -38,6 +38,7 @@
                 password
             }
             post(url, data).then(res => {
+                console.log('登录',res);
                 if (res.errno === 0) {
                     // 登录成功
                     location.href = './admin.html'
